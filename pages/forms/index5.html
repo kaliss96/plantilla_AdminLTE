@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Correspondencia Oficial</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker.css">
+  <!-- iCheck for checkboxes and radio inputs -->
+  <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="../../plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+  <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href="../../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Correspondencia Oficial</h1>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <!-- left column -->
+        <div class="col-md-12">
+          <!-- Correspondencia Oficial -->
+          <div class="card card-info">
+            <div class="card-header">
+              <h3 class="card-title">CORESPONDENCIA OFICIAL</h3>
+            </div>
+            <!-- /.card-header -->
+            <!-- form start -->
+            <form class="form-horizontal">
+              <div class="card-body">
+                <form>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <!-- text input -->
+                      <div class="form-group">
+                        <label>Entidad Origen</label>
+                        <select class="form-control select2" style="width: 100%;">
+                          <option selected="selected">Escoja</option>
+                          <option>Ineter</option>
+                          <option>Minsa</option>
+                          <option>Marena</option>
+                          <option>Policia</option>
+                          <option>Ejercito</option>
+                          <option>MINED</option>
+                          <option>...</option>
+                        </select>
+                        <div class="form-group">
+                          <label for="inputObj">Objeto de la correspondencia</label>
+                          <textarea class="form-control" id="objeto_correspondencia" rows="3"></textarea>
+                        </div>
+                        <label>Fecha de asignación:</label>
+                        <div class="input-group date" id="asignationdatetime" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#asignationdatetime"/>
+                            <div class="input-group-append" data-target="#asignationdatetime" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
+                        <label>Fecha de cumplimiento:</label>
+                          <div class="input-group date" id="cumplimientodatetime" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#cumplimientodatetime"/>
+                              <div class="input-group-append" data-target="#cumplimientodatetime" data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputProAsig">Prorroga de asignación</label>
+                            <textarea class="form-control" id="prorroga_asignacion" rows="3"></textarea>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Fecha de ingreso:</label>
+                          <div class="input-group date" id="datetimeinput" data-target-input="nearest">
+                              <input type="text" class="form-control datetimepicker-input" data-target="#datetimeinput"/>
+                              <div class="input-group-append" data-target="#datetimeinput" data-toggle="datetimepicker">
+                                  <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                              </div>
+                          </div>
+                      </div>
+                      <label>Área asignada</label>
+                      <select class="form-control select2" style="width: 100%;">
+                        <option selected="selected">Escoja</option>
+                        <option>Marlon Moreira</option>
+                        <option>Hernaldo Chamorro</option>
+                        <option>María Elsa Frixione</option>
+                        <option>Carmen soledad Rodríguez</option>
+                        <option>Erick Urbina</option>
+                        <option>Enrique Ortega</option>
+                      </select>
+                      <div class="form-group">
+                        <label for="inputMotivo">Motivo</label>
+                        <textarea class="form-control" id="motivo" rows="5"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputResultado">Resultado</label>
+                        <textarea class="form-control" id="resultado" rows="3"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                <!-- /.card-body -->
+                  <!-- /Footer -->
+                <!-- /.card-footer -->
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--/.col (left) -->
+      </div>
+      <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Select2 -->
+<script src="../../plugins/select2/js/select2.full.min.js"></script>
+<!-- Bootstrap4 Duallistbox -->
+<script src="../../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+<!-- InputMask -->
+<script src="../../plugins/moment/moment.min.js"></script>
+<script src="../../plugins/inputmask/jquery.inputmask.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="../../plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+
+    //Date and time picker
+    $('#reservationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
+    $('#asignationdatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
+    $('#datetimeinput').datetimepicker({ icons: { time: 'far fa-clock' } });
+    $('#cumplimientodatetime').datetimepicker({ icons: { time: 'far fa-clock' } });
+  })
+</script>
+</body>
+</html>
